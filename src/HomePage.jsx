@@ -56,6 +56,21 @@ export default function HomePage() {
   const handleLeftClick = () => {
     setCurrentSlide((prev) => (prev === 0 ? slider.length - 1 : prev - 1));
   };
+
+  React.useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowRight") {
+        handleRightClick();
+      } else if (event.key === "ArrowLeft") {
+        handleLeftClick();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
   return (
     <>
       <div className="w-full container font-sans flex flex-col">
