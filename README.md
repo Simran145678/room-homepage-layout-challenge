@@ -14,7 +14,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./snapshot.png">
+<img width="1082" alt="Screenshot 2024-11-08 at 11 20 31 AM" src="https://github.com/user-attachments/assets/ce2e068c-be33-4e7e-bdf1-7059b6b525e2">
+
 
 ### Built with
 
@@ -25,3 +26,6 @@ Users should be able to:
 - CSS Grid
 - Desktop-first workflow
 - [React](https://reactjs.org/) - JS library
+
+### Link to live site
+- https://room-homepage-layout-challenge.netlify.app/
